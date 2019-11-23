@@ -1,0 +1,81 @@
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Pupusas
+  body
+    .container
+      header.header
+        a(href='#')
+          img.logo(src='images/logo.jpg', alt='pupasas logo')
+        nav
+          a.hide-desktop.options(href='#')
+            i.fas.fa-bars
+            i.fas.fa-times.hide-mobile
+          ul#menu.show-desktop.hide-mobile.menu
+            li
+              a(href='#') Inicio
+            li
+              a(href='#') Publicaciones
+            li
+              a(href='#') Contacto
+        section.big-hero
+          .container
+            h2 Pupusas del comal
+            p El mejor sabor y la mejor calidad
+            ul.social-links
+              li
+                a(href='#')
+                  i.fab.fa-fabook
+              li
+                a(href='#', alt='twitter logo')
+                  i.fab.fa-twitter
+            a.hide-mobile.show-desktop(href='#post')
+              i.fas.fa-arrow-circle-down
+        section.green-area
+          .container.post
+            h2 Especialidad
+            ul
+              li
+                article
+                  img(src='images/frijol.jpg', alt='img')
+                  h3  Frijol con queso.
+                  p
+                    | En esta especilidad contamos con dos tipos de masa arroz y maiz
+                    | Precio:$0.60 c/u
+              li
+                article
+                  img(src='images/quedo.jpg', alt='img')
+                  h3 Queso.
+                  p
+                    | Su eleccion cuenta con dos tipos de masa arroz o maiz.
+                    | Precio:$0.80 c/u
+              li
+                article
+                  img(src='images/queso.jpeg', alt='img')
+                  h3  Revuelta
+                  p
+                    | Su preparacion puede ser con masa de arroz o maiz.
+                    | Precio:$0.75.
+        section.about
+          .container
+            .bio-info
+              p  Para realizar una orden llene el siguiente formulario
+            .contact
+              form.contact-form(action='')
+                p REGISTRAR
+                label(for='masa') Masa
+                input#masa(type='text', name='masa')
+                label(for='especilidad') Especialidad
+                input#especialidad(type='text', name='especialidad')
+                label(for='tamaño') Tamaño
+                input(type='text', id='tamaño', name='tamaño')
+                label(for='precio') Precio
+                input(type='text', id='precio', name='precio)
+                input(type='submit', value='Enviar ')
+        footer
+          p Copyright 2019 Daniela Funes. All Rights Reserved

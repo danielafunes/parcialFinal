@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* El CSS siguiente esta pensando primero para moviles y luego para 
+   Escritiorio*/
+*, ::before, ::after {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+}
+.fa, .fas {
+    font-weight: 900;
+    margin-top: 1.5em;
+    color: white;
+}
+
+body {
+    background-color: #c6cc8e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+
+    
+}
+.container{
+    display: flexbox;
+    padding: 0em 2em;
+   
+
+}
+h2{
+    font-size: 5em;
+    
+}
+
+
+.logo {
+    width: 90px;
+    margin: 1em;
+    margin-right: 100em;
+    border-radius: 5em;
+}
+
+.big-hero .container{
+    margin-top: 3.4em;
+    margin-bottom: 5em;
+}
+/*se le coloco un tamaño a la imagen */
+.big-hero img {
+    width: 120px;   
+}
+.green-area {
+    background-color: beige; 
+    margin-bottom: -2em;
+}
+
+/*personalizando a los post que esta colococados en la pagina segun lo requerido */
+.post {
+    padding: 1em;
+    margin-bottom: -2px;
+}
+.post h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 1em;
+}
+
+.post ul {
+    list-style: none;
+    margin-bottom: -2em;
+}
+
+.post ul li {
+    min-height: 300px;
+    max-width: 350px;
+    margin: 2rem auto;
+}
+/*personalizando el post */
+.post ul li article {
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 2em;
+    margin: 3em;
+    margin-top: -1em;
+
+}
+
+/*a la imagen del articulo se le coloco una altura, ancho y cover */
+.post article img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.post article h3 {
+    color: #0D5061;
+    margin-top: 2em;
+    padding: 0em 1rem;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post article p {
+    color:#112935;
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 20px;
+}
+footer{
+    background-color: #0D5061;
+    color:#D7DEE6;
+}
+menu {
+    background-color: #112935;
+    position: absolute;
+    z-index: 20;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    letter-spacing: 0.9px;
+}
+
+.menu {
+
+    list-style: none;
+    text-align: left;
+    padding: 1em;
+    margin-top: -10em;
+    margin-left: 90em;
+}
+/*lista del munu perzonalizado segun lo requerido*/
+.menu li {
+    display: block;
+    padding: 0.5em;
+    margin-top: 1em;
+
+}
+
+.menu li a {
+    display: inline;
+    padding-left:3px;
+    padding-right:3px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 3px;
+   
+    
+}
+.menu li a:active,
+.menu li a:hover {
+    color: greenyellow;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 2em;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 1em;
+    margin-top: 2em;
+    margin-left: 5em;
+
+    
+}
+.contact * + * {
+    margin-top: 1.5em;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2em;
+    margin-left:-2.5em;
+    margin-right: -2.5em;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1em;
+
+    font-size: 1em;
+    width: 75%;
+     
+}
+.contact-form input[type=submit] {
+    background-color: #F74442;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+    width: 15em;
+    margin-bottom: 2em;
+}
